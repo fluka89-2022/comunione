@@ -2158,3 +2158,54 @@ line-height:1.2;
 
 }
 
+
+@media(max-width:768px){
+
+.floating-nav{
+
+top:12px;
+
+padding:8px 8px;
+
+gap:4px;
+
+max-width:
+calc(100% - 16px);
+
+}
+
+/* LINKS */
+
+.nav-link{
+
+padding:
+0 10px;
+
+font-size:10px;
+
+letter-spacing:0.4px;
+
+height:36px;
+
+}
+
+/* ICONS */
+
+.icon-nav{
+
+width:36px;
+height:36px;
+
+}
+
+/* SVG */
+
+.icon-nav svg{
+
+width:15px;
+height:15px;
+
+}
+
+}
+
