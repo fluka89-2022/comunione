@@ -1,0 +1,231 @@
+
+:root {
+--sage: #6F7F63;
+--gold: #C9A96A;
+--cream: #F8F5EE;
+--text: #4F4B43;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--cream);
+color:var(--text);
+font-family:'Montserrat',sans-serif;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+.narrow{
+max-width:850px;
+}
+
+.section{
+padding:100px 0;
+}
+
+.hero{
+min-height:100vh;
+background:
+linear-gradient(rgba(248,245,238,0.90),
+rgba(248,245,238,0.92)),
+url('images/bg-floral.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-small{
+font-family:'Cormorant Garamond',serif;
+letter-spacing:4px;
+color:var(--sage);
+font-size:28px;
+margin-bottom:20px;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:120px;
+line-height:1;
+color:var(--sage);
+font-weight:400;
+}
+
+.hero-divider{
+width:120px;
+height:1px;
+background:rgba(111,127,99,0.4);
+margin:35px auto;
+}
+
+.hero-date{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+letter-spacing:2px;
+margin-bottom:45px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+border-radius:50px;
+background:var(--sage);
+color:white;
+text-decoration:none;
+font-size:13px;
+letter-spacing:2px;
+transition:0.3s ease;
+border:1px solid var(--sage);
+}
+
+.title{
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+color:var(--sage);
+margin-bottom:70px;
+font-weight:500;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+}
+
+.card{
+background:white;
+padding:50px 40px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,0.04);
+border:1px solid rgba(111,127,99,0.12);
+}
+
+.icon{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.card h3{
+font-family:'Cormorant Garamond',serif;
+color:var(--sage);
+font-size:40px;
+margin-bottom:20px;
+}
+
+.place{
+font-weight:500;
+}
+
+.line{
+width:80px;
+height:1px;
+background:rgba(111,127,99,0.3);
+margin:25px auto;
+}
+
+.invitation,
+.disney{
+background:white;
+}
+
+.invitation-img,
+.disney-img{
+width:100%;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,0.06);
+}
+
+.phrase{
+text-align:center;
+}
+
+blockquote{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+line-height:1.5;
+color:var(--sage);
+font-style:italic;
+margin-bottom:35px;
+}
+
+.phrase-small{
+font-size:18px;
+letter-spacing:1px;
+}
+
+.rsvp{
+text-align:center;
+}
+
+.rsvp-text{
+margin-bottom:40px;
+font-size:18px;
+}
+
+footer{
+padding:80px 20px;
+text-align:center;
+}
+
+.footer-line{
+width:120px;
+height:1px;
+background:rgba(111,127,99,0.3);
+margin:0 auto 30px;
+}
+
+.footer-name{
+font-family:'Great Vibes',cursive;
+color:var(--sage);
+font-size:52px;
+}
+
+@media(max-width:768px){
+.section{
+padding:80px 0;
+}
+
+h1{
+font-size:74px;
+}
+
+.hero-small{
+font-size:20px;
+}
+
+.hero-date{
+font-size:24px;
+}
+
+.title{
+font-size:42px;
+margin-bottom:50px;
+}
+
+blockquote{
+font-size:32px;
+}
+
+.card h3{
+font-size:32px;
+}
+}
