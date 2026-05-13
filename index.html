@@ -11,7 +11,129 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 
+<script>
+
+function copyIBAN(){
+
+  const iban =
+  "IT60X0542811101000001234567";
+
+  navigator.clipboard.writeText(iban);
+
+  const tooltip =
+  document.getElementById("copyTooltip");
+
+  tooltip.classList.add("show");
+
+  setTimeout(() => {
+    tooltip.classList.remove("show");
+  }, 1800);
+
+}
+
+</script>
+
+
 <body>
+
+
+  <!-- =========================
+       FLOATING LUXURY NAVBAR
+  ========================= -->
+  
+  <nav class="floating-nav">
+  
+    <!-- CERIMONIA -->
+  
+    <a href="#evento"
+       class="nav-link">
+  
+      Cerimonia
+  
+    </a>
+  
+    <!-- RICEVIMENTO -->
+  
+    <a href="#ricevimento"
+       class="nav-link">
+  
+      Ricevimento
+  
+    </a>
+  
+    <!-- VIAGGIO -->
+  
+    <a href="#viaggio"
+       class="nav-link">
+  
+      Viaggio ✨
+  
+    </a>
+  
+    <!-- GIFT -->
+  
+    <a href="#disney"
+       class="icon-nav gift-nav"
+       aria-label="Regalo">
+  
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="18"
+           height="18"
+           fill="none"
+           viewBox="0 0 24 24"
+           stroke="currentColor">
+  
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.7"
+              d="M20 12v7a1 1 0 01-1 1H5a1 1 0 01-1-1v-7m16 0H4m16 0h1a1 1 0 001-1V8a1 1 0 00-1-1h-3.382a1 1 0 01-.894-.553l-.724-1.447A1 1 0 0015.106 4H8.894a1 1 0 00-.894.553L7.276 6A1 1 0 016.382 6H3a1 1 0 00-1 1v3a1 1 0 001 1h1m8-5v11"/>
+  
+      </svg>
+  
+    </a>
+  
+    <!-- RSVP -->
+  
+    <a href="#rsvp"
+       class="icon-nav whatsapp-nav"
+       aria-label="Conferma presenza">
+  
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="18"
+           height="18"
+           fill="currentColor"
+           viewBox="0 0 24 24">
+  
+        <path d="M20.52 3.48A11.79 11.79 0 0012.04 0C5.5 0 .16 5.34.16 11.88c0 2.1.55 4.14 1.6 5.94L0 24l6.38-1.68a11.83 11.83 0 005.66 1.44h.01c6.54 0 11.88-5.34 11.88-11.88 0-3.17-1.23-6.15-3.41-8.4zm-8.48 18.3h-.01a9.86 9.86 0 01-5.02-1.38l-.36-.22-3.78.99 1.01-3.69-.24-.38a9.83 9.83 0 01-1.51-5.22c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.98 2.89a9.82 9.82 0 012.9 7c0 5.46-4.44 9.9-9.87 9.9zm5.43-7.41c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15s-.78.98-.96 1.18c-.18.2-.35.22-.65.08-.3-.15-1.25-.46-2.38-1.47a8.93 8.93 0 01-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.94-2.25-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.53.08-.8.38-.28.3-1.06 1.04-1.06 2.54 0 1.5 1.08 2.94 1.23 3.14.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.88.12.57-.08 1.78-.73 2.03-1.44.25-.7.25-1.3.18-1.43-.08-.12-.28-.2-.58-.35z"/>
+  
+      </svg>
+  
+    </a>
+  
+  </nav>
+
+  
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="floating-whatsapp"
+   href="https://wa.me/39NUMERO?text=Ciao%20confermiamo%20la%20presenza%20alla%20Prima%20Comunione%20di%20Gaetano"
+   target="_blank"
+   aria-label="Conferma presenza">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="24"
+       height="24"
+       fill="currentColor"
+       viewBox="0 0 24 24">
+
+    <path d="M20.52 3.48A11.79 11.79 0 0012.04 0C5.5 0 .16 5.34.16 11.88c0 2.1.55 4.14 1.6 5.94L0 24l6.38-1.68a11.83 11.83 0 005.66 1.44h.01c6.54 0 11.88-5.34 11.88-11.88 0-3.17-1.23-6.15-3.41-8.4zm-8.48 18.3h-.01a9.86 9.86 0 01-5.02-1.38l-.36-.22-3.78.99 1.01-3.69-.24-.38a9.83 9.83 0 01-1.51-5.22c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.98 2.89a9.82 9.82 0 012.9 7c0 5.46-4.44 9.9-9.87 9.9zm5.43-7.41c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15s-.78.98-.96 1.18c-.18.2-.35.22-.65.08-.3-.15-1.25-.46-2.38-1.47a8.93 8.93 0 01-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.94-2.25-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.53.08-.8.38-.28.3-1.06 1.04-1.06 2.54 0 1.5 1.08 2.94 1.23 3.14.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.88.12.57-.08 1.78-.73 2.03-1.44.25-.7.25-1.3.18-1.43-.08-.12-.28-.2-.58-.35z"/>
+
+  </svg>
+
+</a>
+
+
 
 <section class="hero">
 
@@ -51,8 +173,12 @@ Il Giorno Speciale
 
 <div class="card">
 
-<div class="icon">⛪</div>
 
+<div class="icon church-icon">
+  <img src="images/chiesa_.png"
+        alt="Chiesa">
+</div>
+  
 <h3>Cerimonia</h3>
 
 <p class="place">
@@ -73,11 +199,17 @@ Piazza San Giorgio 1
 Ore 10:00
 </p>
 
+<a class="map-btn" href="https://maps.google.com/?q=Chiesa+San+Giorgio+Afragola" target="_blank"> APRI MAPPA </a>
+
 </div>
 
 <div class="card">
 
-<div class="icon">🎊</div>
+<div class="icon balloons-icon">
+  <img src="images/palloncini_.png"
+        alt="Palloncini">
+</div>
+  
 
 <h3>Ricevimento</h3>
 
@@ -95,9 +227,12 @@ Via Varignano
 
 <div class="line"></div>
 
+
 <p>
 Dopo la cerimonia
 </p>
+
+<a class="map-btn" href="https://maps.google.com/?q=Agriturismo+Al+Platano+Acerra" target="_blank"> RAGGIUNGI LOCATION </a>
 
 </div>
 
@@ -111,72 +246,321 @@ Dopo la cerimonia
 
 <div class="container narrow">
 
-<blockquote>
-“Dopo questo giorno speciale,
-partiremo per creare nuovi ricordi
-in un luogo magico.”
-</blockquote>
 
-<p class="phrase-small">
-Per chi desidera accompagnarci in questo sogno,
-sarà possibile contribuire al nostro viaggio a Disneyland.
-</p>
+<!-- SEZIONE VIAGGIO COMPLETA -->
 
-</div>
+<section id="viaggio" class="section phrase">
+
+  <!-- STELLINE -->
+
+  <div class="stars-divider">
+
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+
+  </div>
+
+  <!-- CASTELLO SOFT BACKGROUND -->
+
+  <div class="phrase-castle-bg">
+
+    <img src="images/castello_.png"
+         alt="Castello">
+
+  </div>
+
+  <div class="container narrow phrase-content">
+
+    <!-- FRASE -->
+
+    <blockquote>
+      “Dopo questo giorno speciale,
+      partiremo per creare nuovi ricordi
+      in un luogo magico.”
+    </blockquote>
+
+    <!-- TESTO -->
+
+    <p class="phrase-small">
+
+      Per chi desidera accompagnarci
+      con un pensiero speciale ✨
+
+    </p>
+
+    <!-- CTA -->
+
+    <a href="#disney"
+       class="dream-btn">
+
+       SCOPRI DI PIÙ ✨
+
+    </a>
+
+    <!-- SCROLL HINT -->
+
+    <div class="scroll-hint">
+
+      <span>⌄</span>
+
+    </div>
+
+  </div>
 
 </section>
 
-<section class="section disney">
 
-<div class="container narrow">
 
-<h2 class="title">
-Il Nostro Viaggio a Disneyland ✨
-</h2>
 
-<img src="images/retro_card.png"
-alt="Contributo viaggio Disneyland"
-class="disney-img">
 
-</div>
+<!-- NUOVA SEZIONE DISNEY LUXURY -->
+
+<section id="disney" class="section disney">
+
+  <div class="container narrow">
+
+    <!-- TITOLO -->
+
+    <h2 class="title disney-main-title">
+      Il Nostro Viaggio a Disneyland
+    </h2>
+
+    <!-- STELLINE -->
+
+    <div class="stars-divider disney-stars">
+
+      <span>✦</span>
+      <span>✦</span>
+      <span>✦</span>
+
+    </div>
+
+    <!-- CARD -->
+
+    <div class="disney-card">
+
+      <!-- HEADER -->
+
+      <div class="disney-top">
+
+        <!-- CASTELLO -->
+
+        <div class="castle-side">
+
+          <img src="images/castello_.png"
+               alt="Castello">
+
+        </div>
+
+        <!-- CENTRO -->
+
+        <div class="disney-center">
+
+          <div class="small-title">
+            PER IL NOSTRO VIAGGIO
+          </div>
+
+          <h3 class="thanks-title">
+            Grazie di cuore!
+          </h3>
+
+          <div class="mini-divider">
+
+            <span></span>
+            ❤
+            <span></span>
+
+          </div>
+
+        </div>
+
+        <!-- PALLONCINI -->
+
+        <div class="balloons-side">
+
+          <img src="images/palloncini_.png"
+               alt="Palloncini">
+
+        </div>
+
+      </div>
+
+      <!-- BOX IBAN -->
+
+      <div class="iban-box">
+
+        <div class="iban-label">
+          BONIFICO A:
+        </div>
+
+        <div class="iban-name">
+          Falco Antonio
+        </div>
+
+        <div class="iban-divider"></div>
+
+        <div class="iban-label second">
+          IBAN
+        </div>
+
+        <!-- COPY ROW -->
+
+       
+        <div class="iban-row">
+        
+          <div class="iban-code"
+               id="ibanText">
+        
+            IT60 X054 2811 1010 0000 1234 567
+        
+          </div>
+          </div>
+          <div>
+        
+          <d class="copy-helper">
+        
+          <button class="copy-btn"
+                  onclick="copyIBAN()"
+                  aria-label="Copia IBAN">
+        
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="18"
+                 height="18"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke="currentColor">
+        
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 10h6a2 2 0 002-2v-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+        
+            </svg>
+        
+            <span class="copy-btn-text">
+        
+              Tocca per copiare
+        
+            </span>
+        
+            <span class="copy-tooltip"
+                  id="copyTooltip">
+        
+              Copiato
+        
+            </span>
+        
+          </button>
+        
+        </div > </d>
+        
+
+        
+
+        <div class="iban-label second">
+          CAUSALE
+        </div>
+
+        <div class="iban-cause">
+          “Viaggio Disneyland”
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+
+      <div class="signature-heart">
+        ❤
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
-<section class="section rsvp">
 
-<div class="container narrow">
+<!-- =========================
+     RSVP LUXURY SECTION
+========================= -->
 
-<h2 class="title">
-Vi Aspettiamo
-</h2>
+<section id="rsvp" class="section rsvp-section">
 
-<p class="rsvp-text">
-Sarà una gioia condividere con voi questo giorno speciale.
-</p>
+  <!-- DECOR -->
 
-<a
-class="btn"
-href="https://wa.me/393668170045?text=Ciao%20confermiamo%20la%20presenza%20alla%20Prima%20Comunione%20di%20Gaetano">
-CONFERMA SU WHATSAPP
-</a>
+  <div class="rsvp-decor">
 
-</div>
+    <span>✦</span>
+    <span>✦</span>
+    <span>✦</span>
+
+  </div>
+
+  <div class="container narrow">
+
+    <!-- TITLE -->
+
+    <h2 class="rsvp-title">
+
+      Vi Aspettiamo
+
+    </h2>
+
+    <!-- TEXT -->
+
+    <p class="rsvp-text">
+
+      Sarà una gioia condividere con voi
+      questo giorno speciale.
+
+    </p>
+
+    <!-- BUTTON -->
+
+    <a class="rsvp-btn"
+       href="https://wa.me/39NUMERO?text=Ciao%20confermiamo%20la%20presenza%20alla%20Prima%20Comunione%20di%20Gaetano"
+       target="_blank">
+
+      <svg xmlns="http://www.w3.org/2000/svg"
+           width="20"
+           height="20"
+           fill="currentColor"
+           viewBox="0 0 24 24">
+
+        <path d="M20.52 3.48A11.79 11.79 0 0012.04 0C5.5 0 .16 5.34.16 11.88c0 2.1.55 4.14 1.6 5.94L0 24l6.38-1.68a11.83 11.83 0 005.66 1.44h.01c6.54 0 11.88-5.34 11.88-11.88 0-3.17-1.23-6.15-3.41-8.4zm-8.48 18.3h-.01a9.86 9.86 0 01-5.02-1.38l-.36-.22-3.78.99 1.01-3.69-.24-.38a9.83 9.83 0 01-1.51-5.22c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.98 2.89a9.82 9.82 0 012.9 7c0 5.46-4.44 9.9-9.87 9.9zm5.43-7.41c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15s-.78.98-.96 1.18c-.18.2-.35.22-.65.08-.3-.15-1.25-.46-2.38-1.47a8.93 8.93 0 01-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.68-1.64-.94-2.25-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.53.08-.8.38-.28.3-1.06 1.04-1.06 2.54 0 1.5 1.08 2.94 1.23 3.14.15.2 2.12 3.24 5.13 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.88.12.57-.08 1.78-.73 2.03-1.44.25-.7.25-1.3.18-1.43-.08-.12-.28-.2-.58-.35z"/>
+
+      </svg>
+
+      Conferma su WhatsApp
+
+    </a>
+
+    <!-- SIGNATURE -->
+
+    <div class="rsvp-signature-wrap">
+
+      <div class="signature-divider"></div>
+
+      <p class="signature-label">
+
+        Con affetto,
+
+      </p>
+
+      <div class="rsvp-signature">
+
+        Gaetano e la sua famiglia
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
-<footer>
 
-<div class="footer-line"></div>
-
-<p class="footer-small">
-Con affetto,
-</p>
-
-<div class="footer-name">
-Gaetano e la sua famiglia
-</div>
-
-</footer>
 
 </body>
 </html>
